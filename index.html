@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Steven Ho</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+    </head>
+
+    <body>
+        <!-- Nav menus, both normal and hamburger-->
+        <nav id="nav-menu">
+            <div class="logo">Steven Ho</div>
+            <div class="nav-menu-container">
+                <div class="nav-menu-icon-container" onclick="toggleMenu()">
+                    <!-- <input type="checkbox" onclick="toggleMenu()"> -->
+                    <svg viewBox="0 0 32 32" class="nav-menu-icon">
+                        <path class="mini-nav-menu-icon-line mini-nav-menu-icon-line-style1" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 
+                        30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="mini-nav-menu-icon-line" d="M7 16 27 16"></path>
+                    </svg>
+                </div>
+
+                <ul class="nav-menu-items">
+                    <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- profile section -->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile_pic.jpg" alt="Steven's Profile Photo">
+            </div>
+
+            <div class="section__text">
+                <p class="section__text__p1 gray-text">Hello, I'm</p>
+                <h1 class="title">Steven Ho</h1>
+                <!-- My career title and action buttons -->
+                <p class="section__text__p2 gray-text">Frontend Developer / Game Developer</p>
+                <div class="profile-btn-spacer">
+                    <div class="btn-container">
+                        <button class="btn btn-style2" onclick="window.open('./assets/steven_ho_resume.pdf')">Resume</button>
+                        <button class="btn btn-style2" onclick="location.href='./#contact'">Lets Work Together!</button>
+                    </div>
+                </div>
+                <!-- Socials -->
+                <div id="socials-container">
+                    <img src="./assets/linkedin_logo.png" alt="LinkedIn Profile link" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/steven-ho-4a3636228/'">
+                    <img src="./assets/github_logo.png" alt="GitHub Profile link" class="icon"
+                    onclick="location.href='https://github.com/hostevenpleasedontbetaken'">
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Next section action icon" class="icon arrow" onclick="location.href='./#about'">
+        </section>
+
+        <!--About Me Section-->
+        <section id="about">
+            <p class="section__text__p1 gray-text">Get to know more</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about_pic.png" alt="Profile Picture" class="about-pic">
+                </div>
+                <div class="about-details-container max-width-1000">
+                    <div class="details-container translate2-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p class="gray-text">B.Sc Web Design and Development / Game Design and Development</p>
+                    </div>
+                    <!-- description -->
+                    <div class="text-container">
+                        <p class="gray-text">
+                        Setul Parekh is a computer engineer with expertise in Python, C++, C, GLSL, and Dart. He is well-versed in
+                        backend development, embedded systems, database management, and
+                        cloud computing. Setul approaches every challenge with a growth mindset and is committed to staying at the
+                        forefront of industry trends. He believes in fostering a positive
+                        and inclusive work environment and effectively communicates technical concepts to non-technical
+                        stakeholders. Setul is committed to exploring emerging technologies and
+                        contributing to open-source projects. Let's connect and explore opportunities to collaborate on exciting
+                        projects or discuss the latest advancements in the tech world!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Next section action icon" class="icon arrow" onclick="location.href='./#experience'">
+        </section>
+    </body>
+</html>
